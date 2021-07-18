@@ -1,0 +1,17 @@
+[package]
+name = "elevation"
+version = "0.1.0"
+authors = ["Grant Handy <grantshandy@gmail.com>"]
+edition = "2018"
+description = "Get elevations from coordinates and names of locations"
+keywords = ["geolocation", "coordinates", "elevation"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+surf = "2"
+thiserror = "1"
+serde_json = "1"
+
+[dev-dependencies]
+async-std = { version = "1.9.0", features = ["attributes"] }
